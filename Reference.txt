@@ -1,0 +1,259 @@
+
+TODO: 
+===
+  learn about other important npm commands
+  learn about npm depencies 
+
+
+  NPM Dependencies 
+  --
+    1. Project Dependencies
+        * needed for the project to run after build 
+
+        npm i dropzone 
+
+    2. Development Dependencies 
+        * needed for the project to be Developed 
+
+        npm i karma --save-dev (or)
+        npm i karma -D 
+
+
+
+
+  Webapps   
+    1. Server Side Rendering Apps / Traditional Webapps
+          * pages will Reload 
+
+          Arch
+          ====
+            1 Server 
+            ---
+              Client ===> Server 
+              Client <=== Server 
+
+              Client ===> Server 
+              Client <=== Server 
+
+          Codebase: 
+          =======
+            1 Project (Front end code + backend code + DB logic)
+
+          Advantages? 
+          ====
+            1. Search Engine Friendly 
+            2. Initial Loading will not take longer 
+          
+          Disadvantages 
+          ====
+            1. Server has to do the heavylifting 
+            2. Slower Webapps 
+            3. Consumes more bandwidth 
+            4. Expensive 
+            5. Bad Development Experience
+
+
+    2. Client Side Rendering Apps / Modern Webapps 
+          * pages will NOT Reload 
+
+          Arch
+          ====
+            2 Servers 
+              1 Server for Front End App  a.k.a Single Page App 
+                Response: HTML, CSS, JS for all pages 
+
+              1 Server Back End App  a.k.a RESTful API 
+                Response: JSON Data
+
+          Codebase 
+          ===
+             Front End App  (HTML, CSS, JS)
+             Back End App  (PHP / Java with DB Logic)
+
+          Advantages
+          ====
+            1. Workload is shared by two servers 
+            2. Faster Webapps
+            3. Consumes less bandwidth
+            4. Less Expensive 
+            5. Better Development Experience
+
+          Disadvantages
+          =====
+            1. Not Search Engine Friendly (can be fixed)
+            2. Initial Loading will take longer (can be fixed)
+
+
+
+=====
+Single Page App ?
+---
+  Characteristics 
+  --------------- 
+    1. Pages should NOT Reload between link clicks 
+    2. URL Should change 
+    3. Browser History should be maintained w/o page refresh 
+    4. Header and Footer should not be loaded again and again 
+    5. The Section in between header and footer should show contextual updates 
+    6. Active menu should be set 
+    7. Page Title should change 
+
+
+  SPA Frameworks / Libraries 
+  ----
+    #1. React JS (library)
+    #2. VueJS (Framework)
+    #3. Angular (Framework)
+
+  Built with Angular / React / VueJS 
+
+=====
+
+
+
+
+Angular 
+=======
+  Angular CLI
+   npm i @angular/cli@18.2.16 -g 
+   ng version 
+
+   ng new <app-name> 
+
+
+
+===
+Angular File walkthru 
+Angular Arch 
+How Angular Apps work?
+
+=====
+
+Features
+===
+
+  1. Concepts 
+    
+  2. Employee Manager 
+      Add Employee 
+      List Employees 
+      Employee Details 
+
+  3. Profile 
+  4. Auth (login with guard)
+  5. Unit Testing 
+
+
+======
+Building blocks 
+---
+  1. Components 
+      HTML [DONE]
+      CSS [DONE]
+      TS 
+  2. Directives 
+  3. Services 
+  4. Pipes 
+  5. Guards 
+  6. Interfaces 
+  7. Classes [NOT TO BE COVERED]
+  8. Modules 
+  9. Http Interceptor
+
+Concepts 
+----
+  1. Data Binding 
+  2. Routing [45 mins]
+  3. Http 
+  4. Forms and Validations 
+  5. Build 
+
+
+
+Routing 
+====
+  * let's make sure our app is becoming SPA with 5 characteristics 
+
+  Single Page App
+  ---
+    Characteristics 
+    --------------- 
+      1. Pages should NOT Reload between link clicks [DONE]
+      2. URL Should change [DONE]
+      3. Browser History should be maintained w/o page refresh [DONE]
+      4. Header and Footer should not be loaded again and again [DONE]
+      5. The Section in between header and footer should show contextual updates [DONE]
+
+  Step 1: Identify the Menus and URLs
+    Home                  /
+    Concepts              /concepts
+    Employee Manager      /employee-manager
+    About                 /about
+  
+    Let's setup these urls in the menus
+    
+  Step 2: 
+    Check the app. Urls are not stable.
+
+    Figure out what component should appear when the users hitting the urls. 
+
+    Home                  /                                 HomeComponent
+    Concepts              /concepts                         ConceptsComponent
+    Employee Manager      /employee-manager                 EmployeeManagerComponent
+    About                 /about                            AboutComponent
+
+    Let's create the necessary components
+
+    ng g c home --inline-template --inline-style
+    ng g c concepts --inline-style
+    ng g c employees --inline-style 
+    ng g c about --inline-template --inline-style
+
+  Step 3: 
+    Now, we can configure routes. 
+
+    in app.routes.ts let's do. 
+
+
+      // Configuring the routes
+      export const routes: Routes = [
+        { path: '', component: HomeComponent },
+        { path: 'concepts', component: ConceptsComponent },
+        { path: 'employee-manager', component: EmployeesComponent },
+        { path: 'about', component: AboutComponent },
+      ];
+
+
+  Step 4: 
+    Check the app. URLs will be stable. 
+    But, the components are not showing up when you hit the menu 
+
+    Let's fix it with router-outlet in app.component.html 
+
+  Step 5: 
+    Check the app. Page will refresh. Let's fix it 
+
+    go to header.component.html, 
+    replace all href with routerLink 
+
+    to make it work, you need to import RouterModule in header.component.ts 
+
+
+      @Component({
+        selector: 'app-header',
+        standalone: true,
+        imports: [RouterModule],    // <=== this line 
+        templateUrl: './header.component.html',
+        styleUrl: './header.component.css'
+      })
+      export class HeaderComponent {
+
+      }
+
+
+  Step 6: 
+  === 
+    Check the app. it works fine. 
+
+    TODO: Set the active menu 
+    TODO: set the page title 
