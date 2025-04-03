@@ -290,7 +290,9 @@ Data Binding
 Cross Component Communication
 ----
   1. Parent to Child Component Communication 
-      using Custom Property Binding 
+      using Custom Property Binding
+      
+      [] 
 
   2. Child to Parent Component Communication
       using Custom Event Binding 

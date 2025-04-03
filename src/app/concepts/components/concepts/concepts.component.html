@@ -103,8 +103,18 @@
       aria-labelledby="cpb-tab"
       tabindex="0"
     >
-      <h2>Custom Prop Binding</h2>
-     
+      <h2>Custom Property Binding</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <app-user-profile 
+            [firstName]="profile.firstName" 
+            [lastName]="profile.lastName"
+            [city]="profile.city"
+            >
+
+          </app-user-profile>
+        </div>
+      </div>
     </div>
 
     <div

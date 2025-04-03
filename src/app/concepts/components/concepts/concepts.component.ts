@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { UserProfileComponent } from '../user-profile/user-profile.component';
 
 @Component({
   selector: 'app-concepts',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, UserProfileComponent],
   templateUrl: './concepts.component.html',
 })
 export class ConceptsComponent {
@@ -21,6 +22,13 @@ export class ConceptsComponent {
 
   // two way binding
   courseName = "Angular";
+
+  // For Custom Property Binding 
+  profile = {
+    firstName: "Steve",
+    lastName: "Smith",
+    city: "Sydney"
+  }
 
   // event binding 
   handleClickMe(event: any) {

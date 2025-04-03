@@ -1,5 +1,7 @@
 1. Learn about integrating bootstrap in angular app 
 2. Implement page title 
 3. Implement Active menu 
+4. Disable the Click Me button on click  (refer concepts.comp.html) 
+5. Receive the userProfile as object in UserProfileComponent and display 
 
 
