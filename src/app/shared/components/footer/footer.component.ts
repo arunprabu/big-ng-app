@@ -20,4 +20,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  profileName = "Arun";
+
 }

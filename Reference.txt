@@ -162,8 +162,8 @@ Building blocks
 
 Concepts 
 ----
-  1. Data Binding 
-  2. Routing [45 mins]
+  1. Data Binding [~2.5 hours]
+  2. Routing [DONE]
   3. Http 
   4. Forms and Validations 
   5. Build 
@@ -253,7 +253,90 @@ Routing
 
   Step 6: 
   === 
+
     Check the app. it works fine. 
 
     TODO: Set the active menu 
     TODO: set the page title 
+  
+
+Data Binding 
+===
+  * Keeping the data in Component TS and displaying it in Component HTML 
+
+  1. Interpolation 
+        TS ==> HTML InnerText
+        {{ }}
+
+  2. Property Binding 
+        TS ==> HTML Property
+        []
+
+  3. Event Binding 
+        TS <== HTML Element 
+        ()
+
+  4. Two Way Binding 
+        TS <==> HTML 
+        [(ngModel)]
+
+        Note: can be implemented in form fields
+
+  5. Custom Property Binding 
+  6. Custom Event Binding 
+
+
+====
+Cross Component Communication
+----
+  1. Parent to Child Component Communication 
+      using Custom Property Binding 
+
+  2. Child to Parent Component Communication
+      using Custom Event Binding 
+
+  3. Any to Any Component Communication [TODO]
+      Prereq: Services, RxJS / Observables, Subscription 
+
+
+Project Structure
+----
+  src/
+    app/ 
+      about/
+      concepts/
+      employees/
+      footer/
+      header/
+      home/
+
+  1. Feature-wise Project Structure 
+  2. Building-Block wise Project Structure 
+      src/
+        app/
+          components/
+            about/
+            concepts/
+            employees/
+            footer/
+            header/
+            home/
+          directives/
+          services/
+          pipes/
+          guards/
+
+  3. Feature-wise and Building block wise Project Structure [RECOMMENDED]
+      src/
+        app/
+          shared/
+            components/
+              header/
+              footer/
+          home/ 
+          concepts/
+            components/
+            directives/
+            services/
+          employees/
+          about/ 
