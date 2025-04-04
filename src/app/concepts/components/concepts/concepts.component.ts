@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { UserProfileComponent } from '../user-profile/user-profile.component';
 import { ReportsComponent } from '../reports/reports.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-concepts',
   standalone: true,
-  imports: [FormsModule, UserProfileComponent, ReportsComponent],
+  imports: [FormsModule,
+     UserProfileComponent, ReportsComponent,
+    CommonModule],
   templateUrl: './concepts.component.html',
 })
 export class ConceptsComponent {
@@ -33,6 +36,11 @@ export class ConceptsComponent {
     lastName: "Smith",
     city: "Sydney"
   }
+
+  // for directive 
+  isLoggedIn = true;
+  skills = ["HTML", "CSS", "JS", "TS", "Angular" ];
+
 
   // event binding 
   handleClickMe(event: any) {

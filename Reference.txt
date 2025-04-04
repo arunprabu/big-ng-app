@@ -150,7 +150,7 @@ Building blocks
   1. Components 
       HTML [DONE]
       CSS [DONE]
-      TS 
+      TS [DONE]
   2. Directives 
   3. Services 
   4. Pipes 
@@ -294,8 +294,9 @@ Cross Component Communication
       
       [] 
 
-  2. Child to Parent Component Communication 
+  2. Child to Parent Component Communication [DONE]
       using Custom Event Binding 
+      ()
 
   3. Any to Any Component Communication [TODO]
       Prereq: Services, RxJS / Observables, Subscription 
@@ -344,3 +345,19 @@ Project Structure
           about/ 
 
 ====
+
+Directives 
+----
+  * Special Instructions to the DOM
+
+  2 Types 
+  ---
+    1. Attribute Directive 
+        examples: routerLink, routerLinkActive, routerLinkActiveOptions, 
+
+    2. Structural Directive  
+        * impact will be on structural layer
+
+        *ngIf [DONE]
+        *ngFor [DONE]
+        ngSwitch [TODO]

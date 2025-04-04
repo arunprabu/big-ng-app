@@ -9,6 +9,18 @@
 5. Receive the userProfile as object in UserProfileComponent and display 
     [3 devs should fix it]
 
-6. 
+6. Learn about *ngIf and else in angular (use ng-template )
+7. Learn about finding index in 
+    *ngFor and display the skills like the following 
+        1. HTML 
+        2. CSS 
+        3. ...
+        4. ...
+        5. ... 
+
+    Note: Do not use ol tag 
+
+8. Implement *ngFor in header.component.html to avoid code duplicates in menus (li tags) 
+
 
 
