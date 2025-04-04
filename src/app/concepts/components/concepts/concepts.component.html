@@ -1,5 +1,7 @@
 <div>
   <h1>Important Concepts of Angular</h1>
+  <p>Updated Received from Report component: {{reportDetailsReceivedFromChild?.message}} </p>
+  <p>the Report id: {{reportDetailsReceivedFromChild?.id}} </p>
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
@@ -125,6 +127,10 @@
       tabindex="0"
     >
       <h2>Custom Event Binding</h2>
+      <!-- Step 5 of Custom event binding -- handle the emitted event -->
+      <app-reports 
+        (reportSuccess)="handleReportSuccess($event)">
+      </app-reports>
       
     </div>
     

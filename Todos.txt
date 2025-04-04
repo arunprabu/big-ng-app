@@ -1,7 +1,14 @@
 1. Learn about integrating bootstrap in angular app 
+  [3 developers didn't complete - Srivatsan, Karunakaran, Krishna Praveen]
 2. Implement page title 
+    [except 1 developer -- all others should use app.routes.ts]
 3. Implement Active menu 
+    [3 devs should fix it]
 4. Disable the Click Me button on click  (refer concepts.comp.html) 
+    [all devs completed]
 5. Receive the userProfile as object in UserProfileComponent and display 
+    [3 devs should fix it]
+
+6. 
 
 

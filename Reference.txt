@@ -289,12 +289,12 @@ Data Binding
 ====
 Cross Component Communication
 ----
-  1. Parent to Child Component Communication 
+  1. Parent to Child Component Communication [DONE]
       using Custom Property Binding
       
       [] 
 
-  2. Child to Parent Component Communication
+  2. Child to Parent Component Communication 
       using Custom Event Binding 
 
   3. Any to Any Component Communication [TODO]
@@ -342,3 +342,5 @@ Project Structure
             services/
           employees/
           about/ 
+
+====
