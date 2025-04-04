@@ -151,7 +151,7 @@ Building blocks
       HTML [DONE]
       CSS [DONE]
       TS [DONE]
-  2. Directives 
+  2. Directives [DONE]
   3. Services 
   4. Pipes 
   5. Guards 
@@ -360,4 +360,4 @@ Directives
 
         *ngIf [DONE]
         *ngFor [DONE]
-        ngSwitch [TODO]
+        ngSwitch [TODO:]
