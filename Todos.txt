@@ -21,6 +21,5 @@
     Note: Do not use ol tag 
 
 8. Implement *ngFor in header.component.html to avoid code duplicates in menus (li tags) 
-
-
+9. Learn about ngSwitch -- come out with creative example for this todo
 
