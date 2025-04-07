@@ -20,27 +20,21 @@ export class ConceptsComponent {
     name: "Arun",
     expInYears: 5
   }
-
   // Property Binding 
   teamSize = 10;
-
   // two way binding
   courseName = "Angular";
-
   // custom event binding
   reportDetailsReceivedFromChild: any;
-
   // For Custom Property Binding 
   profile = {
     firstName: "Steve",
     lastName: "Smith",
     city: "Sydney"
   }
-
   // for directive 
   isLoggedIn = true;
   skills = ["HTML", "CSS", "JS", "TS", "Angular" ];
-
 
   // event binding 
   handleClickMe(event: any) {
@@ -54,5 +48,4 @@ export class ConceptsComponent {
     console.log(event);
     this.reportDetailsReceivedFromChild = event;
   }
-
 }

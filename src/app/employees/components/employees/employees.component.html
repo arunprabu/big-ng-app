@@ -9,7 +9,7 @@
         </p>
         <a
           class="btn btn-primary btn-lg"
-          routerLink="/employees/add"
+          routerLink="/employee-manager/add"
           role="button"
           >Create New Employee</a
         >
@@ -21,18 +21,16 @@
     <h2>Listing Employees</h2>
 
     
-    <div class="col-sm-3 mb-2">
+    <div class="col-sm-3 mb-2" *ngFor="let employee of employees">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">John</h5>
-          <p class="card-text">Phone:13245678</p>
-          <a routerLink="/employees/1" class="card-link">View Details</a>
+          <h5 class="card-title">{{employee.name}}</h5>
+          <p class="card-text">Phone: {{employee.phone}}</p>
+          <a routerLink="/employee-manager/{{employee.id}}" class="card-link">View Details</a>
         </div>
       </div>
     </div>
 
-    
-    
 
   </div>
 </div>

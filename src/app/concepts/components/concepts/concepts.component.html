@@ -104,12 +104,14 @@
 
       <h3>Structural Directive</h3>
       <h4>*ngIf Demo</h4>
-      <div class="alert alert-success" *ngIf="isLoggedIn">
+      <div class="alert alert-success" *ngIf="isLoggedIn; else NotAuth">
         Fantastic. You are authenticated. You can access premium features of the app!
       </div>
-      <div class="alert alert-danger" *ngIf="!isLoggedIn">
-        You are not authenticated yet! Please login
-      </div>
+      <ng-template #NotAuth>
+        <div class="alert alert-danger">
+          You are not authenticated yet! Please login
+        </div>
+      </ng-template>
       <!-- TODO: Learn about if else in angular -->
 
       <h4>*ngFor Demo</h4>

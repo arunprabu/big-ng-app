@@ -361,3 +361,23 @@ Directives
         *ngIf [DONE]
         *ngFor [DONE]
         ngSwitch [TODO:]
+
+
+
+Employee Manager App 
+---
+  1. Add Employee 
+      AddEmployeeComponent 
+      ng g c employees/components/add-employee --inline-style 
+      http://localhost:4200/employee-manager/add
+
+
+  2. List Employees 
+      EmployeesComponent 
+      http://localhost:4200/employee-manager
+
+  3. Employee Details 
+      EmployeeDetailsComponent 
+      http://localhost:4200/employee-manager/10
+      http://localhost:4200/employee-manager/34567890
+      http://localhost:4200/employee-manager/45

@@ -1,7 +1,7 @@
 1. Learn about integrating bootstrap in angular app 
-  [3 developers didn't complete - Srivatsan, Karunakaran, Krishna Praveen]
+  [1 developer didn't complete -  Karunakaran]
 2. Implement page title 
-    [except 1 developer -- all others should use app.routes.ts]
+    [1 developer didn't complete  -- Karunakaran]
 3. Implement Active menu 
     [3 devs should fix it]
 4. Disable the Click Me button on click  (refer concepts.comp.html) 
@@ -10,6 +10,7 @@
     [3 devs should fix it]
 
 6. Learn about *ngIf and else in angular (use ng-template )
+    [ Harikesh, Karunakaran should get reviewed ]
 7. Learn about finding index in 
     *ngFor and display the skills like the following 
         1. HTML 
@@ -21,5 +22,50 @@
     Note: Do not use ol tag 
 
 8. Implement *ngFor in header.component.html to avoid code duplicates in menus (li tags) 
+    [4 devs didn't complete]
 9. Learn about ngSwitch -- come out with creative example for this todo
+    [3 devs completed.]
+10. implment routerLinkActive="custom-active" in header.comp.html and make the active styles work
 
+
+
+
+
+
+4 Projects 
+========
+
+2 Types of Users: 
+  1. Admins 
+  2. Customers
+
+1. Event Management App 
+    Create Event 
+      https://localhost:8080/api/v1/events    - POST 
+    List Events 
+      https://localhost:8080/api/v1/events    - GET 
+    Event Details
+      https://localhost:8080/api/v1/events/1  - GET
+    Update Event 
+      https://localhost:8080/api/v1/events/1  - PUT
+    Delete Event 
+      https://localhost:8080/api/v1/events/1  - DELETE
+
+2. Flight Ticket Booking (RSK)
+3. Movie Ticket Booking (Masterminds)
+4. E-Commerce (Squad)
+    Admins 
+        1. Add Products
+            Name, Description, SKU 
+        2. List Products 
+        3. Peoduct Details
+        4. Edit Product 
+        5. Delete Product 
+    
+    End Users
+        1. Browse Products
+        2. Add to cart 
+        3. Checkout 
+
+5. Food Delivery App 
+    1. 
