@@ -18,9 +18,11 @@ export class EmployeesComponent implements OnInit {
     console.log("1. Inside Constructor of EmployeesComponent ");
   }
 
+  // Life cycle hook
   ngOnInit(): void {
     console.log("2. Inside ngOnInit of EmployeesComponent ");
     // This is the ideal place for us to hit rest api 
+    // automatically be called after constructor
     // 2. send the req to the service
     this.employeeService.getEmployees()
       .subscribe((res: any) => { // 3. get the response from the service 

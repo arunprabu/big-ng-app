@@ -26,6 +26,9 @@
 9. Learn about ngSwitch -- come out with creative example for this todo
     [3 devs completed.]
 10. implment routerLinkActive="custom-active" in header.comp.html and make the active styles work
+11. Make the Go back button to work in Add Employee page
+12. Implement max 10 digits -- phone validation in Add Employee page
+13. Implement Loader / Spinner in Employee details component 
 
 
 

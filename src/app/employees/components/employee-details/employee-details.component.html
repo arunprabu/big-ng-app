@@ -1,1 +1,22 @@
-<p>employee-details works!</p>
+<a routerLink="/employee-manager" class="btn btn-link">Go back</a>
+<div class="container">
+  <div class="row">
+    <div class="card col-md-12">
+      <!-- TODO: show loader/spinner here-->
+      <div class="card-body">
+        <h5 class="card-title">{{employee?.name}}</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <p>Phone: {{employee?.phone}}</p>
+        <p>Email: {{employee?.email}}</p>
+        <button type="button" class="btn btn-primary">
+          Edit
+        </button>
+        <button type="button" class="btn btn-danger">Delete</button>
+
+      </div>
+    </div>
+  </div>
+</div>

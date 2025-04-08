@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: 'concepts', component: ConceptsComponent },
   { path: 'employee-manager', component: EmployeesComponent },
   { path: 'employee-manager/add', component: AddEmployeeComponent },
-  { path: 'employee-manager/:id', component: EmployeeDetailsComponent },
+  { path: 'employee-manager/:empId', component: EmployeeDetailsComponent }, // id - url param
   { path: 'about', component: AboutComponent },
 ];
 

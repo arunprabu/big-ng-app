@@ -363,6 +363,31 @@ Directives
         ngSwitch [TODO:]
 
 
+Forms in angular
+====
+  1. Template Driven Forms 
+      * made with just html 
+      * validations can be implemented with directives 
+
+      Disadvantages
+      ===
+        1. Not suitable for unit testing 
+        2. Not suitable for complex form validations
+
+  2. Reactive Forms [RECOMMENDED]
+      * made with html + ts 
+      * custom validations are possible 
+
+      Advantages
+      ===
+        1. suitable for unit testing 
+        2. suitable for complex form validations
+
+
+
+
+
+
 
 Employee Manager App 
 ---
