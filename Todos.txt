@@ -19,11 +19,20 @@
 8. Implement *ngFor in header.component.html to avoid code duplicates in menus (li tags) 
     [4 devs didn't complete]
 9. Learn about ngSwitch -- come out with creative example for this todo
-    [3 devs completed.]
+    [2 devs completed. Sruthi, Madhumitha have completed. ]
 10. implment routerLinkActive="custom-active" in header.comp.html and make the active styles work
 11. Make the Go back button to work in Add Employee page
-12. Implement max 10 digits -- phone validation in Add Employee page 
+    Implement navigating to another page through program
+    [Srivatsan completed.]
+12. Implement max 10 digits -- phone validation in Add Employee page. Limit it to accep
+    [Srivatsan completed.]
 13. Implement Loader / Spinner in Employee details component 
+    [Nithin, Reshekkaesh have completed ]
+
+14. Handle 404 - in Angular
+15. Implement Logout
+
+
 
 
 
@@ -56,17 +65,30 @@
 3. Movie Ticket Booking (Masterminds)
 4. E-Commerce (Squad)
     Admins 
+       https://localhost:8080/api/v1/admin/auth/signup    - POST 
+       https://localhost:8080/api/v1/admin/auth/login     - POST  
+
         1. Add Products
             Name, Description, SKU 
+            https://localhost:8080/api/v1/admin/products    - POST 
         2. List Products 
-        3. Peoduct Details
+            https://localhost:8080/api/v1/admin/products    - GET 
+        3. Product Details
+            https://localhost:8080/api/v1/admin/products/1    - GET
         4. Edit Product 
+            https://localhost:8080/api/v1/admin/products/1    - PUT
         5. Delete Product 
+            https://localhost:8080/api/v1/admin/products/1    - DELETE
     
     End Users
         1. Browse Products
-        2. Add to cart 
-        3. Checkout 
+            https://localhost:8080/api/v1/products   - GET
+        2. Product Details
+            https://localhost:8080/api/v1/products/1   - GET
+        3. Add to cart 
+            https://localhost:8080/api/v1/manage-cart   - POST
+            
+        4. Checkout 
+            https://localhost:8080/api/v1/checkout   - POST
 
-5. Food Delivery App 
-    1. 
+

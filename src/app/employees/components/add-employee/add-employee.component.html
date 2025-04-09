@@ -27,7 +27,8 @@
         <div class="col-sm-10">
           <input type="text" class="form-control" [ngClass]="{
               'is-invalid': addEmployeeForm.get('phone')?.touched && addEmployeeForm.get('phone')?.invalid
-            }" placeholder="Enter Phone" id="phoneInput" formControlName="phone" />
+            }" placeholder="Enter Phone" id="phoneInput" formControlName="phone"
+             pattern=""/>
           <div class="invalid-feedback">
             <div id="phoneRequired">Phone is required</div>
             <div>TODO: Max 10 Digits</div>
