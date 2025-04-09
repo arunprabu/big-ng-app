@@ -1,16 +1,11 @@
-1. Learn about integrating bootstrap in angular app 
-  [1 developer didn't complete -  Karunakaran]
-2. Implement page title 
-    [1 developer didn't complete  -- Karunakaran]
-3. Implement Active menu 
-    [3 devs should fix it]
-4. Disable the Click Me button on click  (refer concepts.comp.html) 
-    [all devs completed]
+1. Learn about integrating bootstrap in angular app [DONE]
+2. Implement page title  [DONE]
+3. Implement Active menu [DONE]
+4. Disable the Click Me button on click  (refer concepts.comp.html) [DONE]
 5. Receive the userProfile as object in UserProfileComponent and display 
     [3 devs should fix it]
 
-6. Learn about *ngIf and else in angular (use ng-template )
-    [ Harikesh, Karunakaran should get reviewed ]
+6. Learn about *ngIf and else in angular (use ng-template ) [DONE]
 7. Learn about finding index in 
     *ngFor and display the skills like the following 
         1. HTML 
