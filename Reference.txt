@@ -152,20 +152,20 @@ Building blocks
       CSS [DONE]
       TS [DONE]
   2. Directives [DONE]
-  3. Services 
-  4. Pipes 
-  5. Guards 
-  6. Interfaces 
+  3. Services [DONE]
+  4. Pipes [DONE]
+  5. Guards [DONE]
+  6. Interfaces [DONE]
   7. Classes [NOT TO BE COVERED]
-  8. Modules 
-  9. Http Interceptor
+  8. Modules [DONE]
+  9. Http Interceptor [NOT TO BE COVERED]
 
 Concepts 
 ----
   1. Data Binding [~2.5 hours]
   2. Routing [DONE]
-  3. Http 
-  4. Forms and Validations 
+  3. Http [DONE]
+  4. Forms and Validations [DONE]
   5. Build 
 
 
@@ -431,10 +431,41 @@ Authentication
         passed to client (stored in cookies)
 
 
-
   2. Token Based    
       Token will be generated in server [DONE]
         passed to client (store in http-only cookie, local storage, session storage) [DONE]
 
         123456789012hgertjkfglsafdhbgjknlrsdgf
         orifuerp340563480678-4353q97556676867
+
+
+===
+Pipes 
+---
+  * utils to transfrom information from one format to another
+
+  Pipes 
+  ---
+    Built in pipes
+      date
+
+    Custom pipes
+      ng g p shared/pipes/<pipe-name>
+
+===
+
+
+in ng v16 apps,
+  app.routes.ts would be app-routing.module.ts
+  app.config.ts would be app.module.ts
+
+===
+
+i18n 
+refer 
+  https://github.com/arunprabu/ng-i18n-demo/tree/master
+
+===
+Unit Testing 
+----
+

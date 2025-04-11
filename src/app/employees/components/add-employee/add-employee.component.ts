@@ -38,7 +38,7 @@ export class AddEmployeeComponent {
 
     // 1. send the above data to employee service 
     this.employeesService.addEmployee(this.addEmployeeForm.value)
-      .subscribe((res: any) => { // 2. receive the response from the employee service
+      .subscribe((res) => { // 2. receive the response from the employee service
         console.log(res);
         this.isSaved = true;
       });

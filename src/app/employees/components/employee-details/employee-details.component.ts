@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { EmployeesService } from '../../services/employees.service';
+import { Employee } from '../../models/employee';
 
 @Component({
   selector: 'app-employee-details',
@@ -10,7 +11,7 @@ import { EmployeesService } from '../../services/employees.service';
   styles: ``
 })
 export class EmployeeDetailsComponent implements OnInit{
-  employee: any;
+  employee!: Employee;
   employeeId: string;
 
   constructor(private employeesService: EmployeesService, private activatedRoute: ActivatedRoute) {
@@ -20,7 +21,7 @@ export class EmployeeDetailsComponent implements OnInit{
 
   ngOnInit(): void {
     this.employeesService.getEmployeeById(this.employeeId)
-      .subscribe((res: any) => {
+      .subscribe((res: Employee) => {
         console.log(res);
         this.employee = res;
       })

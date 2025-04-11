@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Employee } from '../models/employee';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +12,7 @@ export class EmployeesService {
   constructor(private http: HttpClient) { }
 
    // 1. get the request from the comp 
-  getEmployees() {
+  getEmployees(): Observable<Employee[] | any> {
     // 2. send the req to the REST API 
     // 2.1. What's the REST API URL? REST_API_URL
     // 2.2. What's the HTTP Method? GET
@@ -33,7 +35,7 @@ export class EmployeesService {
   }
 
   // get employee details 
-  getEmployeeById(id: string | number) {
+  getEmployeeById(id: string | number): Observable<Employee | any> {
     return this.http.get(this.REST_API_URL + '/' + id);
   }
 

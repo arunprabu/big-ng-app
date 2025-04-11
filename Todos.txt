@@ -19,20 +19,21 @@
 8. Implement *ngFor in header.component.html to avoid code duplicates in menus (li tags) 
     [4 devs didn't complete]
 9. Learn about ngSwitch -- come out with creative example for this todo
-    [2 devs completed. Sruthi, Madhumitha have completed. ]
-10. implment routerLinkActive="custom-active" in header.comp.html and make the active styles work
+    [2 devs did not complete. Disha and Nithin are working on this]
+10. implement routerLinkActive="custom-active" in header.comp.html and make the active styles work [DONE]
 11. Make the Go back button to work in Add Employee page
     Implement navigating to another page through program
-    [Srivatsan completed.]
-12. Implement max 10 digits -- phone validation in Add Employee page. Limit it to accep
-    [Srivatsan completed.]
+    [Reshekkaesh, Disha, Madhumitha did not complete.]
+12. Implement max 10 digits -- phone validation in Add Employee page. Limit it to only numbers
+    [Krishna Praveen, Harikesh, Nayanika, Disha, Karunakaran, Nithin didn't complete .]
 13. Implement Loader / Spinner in Employee details component 
     [Nithin, Reshekkaesh have completed ]
 
 14. Handle 404 - in Angular
 15. Implement Logout
 
-
+16. Handle error in api calls 
+====
 
 
 
