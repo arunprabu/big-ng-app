@@ -406,3 +406,35 @@ Employee Manager App
       http://localhost:4200/employee-manager/10
       http://localhost:4200/employee-manager/34567890
       http://localhost:4200/employee-manager/45
+
+
+HTTP
+--
+  /login   - GET
+    Client  ==> Server  
+    Client  <== Server 
+
+  /login  - POST
+    Client  ==> Server 
+    Client  <== Server 
+      Token 
+
+
+
+
+
+Authentication
+===
+  1. Session Based 
+    Session id will be generated in server
+      stored in server
+        passed to client (stored in cookies)
+
+
+
+  2. Token Based    
+      Token will be generated in server [DONE]
+        passed to client (store in http-only cookie, local storage, session storage) [DONE]
+
+        123456789012hgertjkfglsafdhbgjknlrsdgf
+        orifuerp340563480678-4353q97556676867
